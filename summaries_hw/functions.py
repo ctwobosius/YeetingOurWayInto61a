@@ -1,5 +1,6 @@
 """ Fun-ctions! Pun-ctions? Punctuation??? Syntax ;)"""
 
+
 print() # is a function!
 """ You can tell because there's no space between the variable name
 and the parenthesis. """
@@ -8,6 +9,7 @@ and the parenthesis. """
 int()
 str()
 float()
+
 
 """ Functions behave like they do in math, for example """
 def f(x):
@@ -26,6 +28,7 @@ def f(x):
 
 print(f(3)) # What would this do? ____
 
+
 """ Multi-argument functions """
 def fatReptile(fat, reptile):
     if fat and reptile:
@@ -33,22 +36,27 @@ def fatReptile(fat, reptile):
 
 print(fatReptile(True, True)) # What is this? ____
 
+
 """ Boolean facts """
 False == 0 == "" == None # False-y values
 False == () == [] == {} # False-y values you'll learn later on
 # Everything else is True-thy!
 
+
 """ Boolean short circuiting """
 # "and" returns 1st False-y values
 # "or" returns 1st True-thy value
 
+
 """ None/no return """
+
 def garbage(): # No arguments is possible!
     "This does nothing"
     342 + 3
     "asdf"
+
 """
-        If you have no return, then the function returns None, a False-y value
+If you have no return, then the function returns None, a False-y value
 """
 
 def garbage_equivalent():
@@ -57,9 +65,13 @@ def garbage_equivalent():
 x = print()
 x # What do you think x is? ____
 
-""" Print function looks something like this (*NOT the actual code*) """
+
+"""
+Print function looks something like this (*NOT the actual code*)
+It has a side effect, even though it returns nothing.
+"""
 def print(msg):
-    display_in_terminal(msg)
+    display_in_terminal(msg) # side effect
     return None
 
 # Tricky! What would
@@ -69,6 +81,7 @@ print(print("Haha"))
 # Hint: remember PEMDAS! Inner parenthesis are evaluated first, so
 ((3 + 5) * 2)
 # 3 + 5 is done first!
+
 
 """ Scope """
 
