@@ -24,14 +24,14 @@ def f(x):
         Don't forget to indent and include the ":"!
 """
 
-print(f(3)) # What would this do?
+print(f(3)) # What would this do? ____
 
 """ Multi-argument functions """
 def fatReptile(fat, reptile):
     if fat and reptile:
         return "weird lizard"
 
-print(fatReptile(True, True)) # What is this?
+print(fatReptile(True, True)) # What is this? ____
 
 """ Boolean facts """
 False == 0 == "" == None # False-y values
@@ -55,7 +55,7 @@ def garbage_equivalent():
     return None
 
 x = print()
-x # What do you think x is?
+x # What do you think x is? ____
 
 """ Print function looks something like this (*NOT the actual code*) """
 def print(msg):
@@ -64,7 +64,7 @@ def print(msg):
 
 # Tricky! What would
 print(print("Haha"))
-# do?
+# do? ____
 
 # Hint: remember PEMDAS! Inner parenthesis are evaluated first, so
 ((3 + 5) * 2)
@@ -85,11 +85,11 @@ print(print("Haha"))
 x = 3 # global variable
 
 def past(a): # local
-    print(a) # Will this error?
+    print(a) # Will this error? ____
     y = 5 # local
     x = 2 # local
     return # this is the same as return None
 
-print(a) # Will this error?
-print(y) # How about this?
-print(x) # The fun part: what about this?
+print(a) # Will this error? ____
+print(y) # How about this? ____
+print(x) # The fun part: what about this? ____
