@@ -1,6 +1,9 @@
 # YeetingOurWayInto61a
 Edlyft prework resources, enjoy! :)
 
+### Recordings:
+
+https://drive.google.com/drive/folders/1SWLyrivfK3YRq-Nk-Ppk1TfwItbaOjJd
 
 ### Extra readings in case you want to get ahead:
 
