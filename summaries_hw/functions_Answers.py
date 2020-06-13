@@ -47,7 +47,9 @@ def past(a): # local
 past("a") # run the function
 
 print(a) # Will this error? ____
-#   Errors, a is again defined locally, function arguments are local
+#   Errors, a is again defined locally, since function arguments are local
+#   a is not defined globally either, so when we look in the parent frame we can't find it
+#   If it's not in any of the frames up to global, then it errors
 
 print(y) # How about this? ____
 #   Errors, y is again defined locally within the function, it's indented
