@@ -103,6 +103,8 @@ def past(a): # local
     x = 2 # local
     return # this is the same as return None
 
+past("a") # run the function
+
 print(a) # Will this error? ____
 print(y) # How about this? ____
 print(x) # The fun part: what about this? ____
