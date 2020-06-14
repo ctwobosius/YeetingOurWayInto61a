@@ -36,6 +36,9 @@ https://www.w3schools.com/python/python_functions.asp
 #### Environment Diagrams:
 
 http://pythontutor.com/visualize.html#mode=edit
+Python tutor has a way to automatically generate environment diagrams, and you can actually step through them line by line. Just paste your code then hit "visualize execution" and you can press "next" and "previous" to run through each line of code, one line at a time!
+
+http://albertwu.org/cs61a/notes/environments.html
 
 
 #### Lists:
