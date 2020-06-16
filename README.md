@@ -1,5 +1,5 @@
 # YeetingOurWayInto61a
-Edlyft prework resources, enjoy! :)
+Edlyft prework resources made by Calvin Wong and Lucy Wan, compiled by Calvin Wong, enjoy! :)
 
 ### Recordings:
 
@@ -31,6 +31,8 @@ https://thepythonguru.com/python-control-statements/
 #### Functions:
 
 https://www.w3schools.com/python/python_functions.asp
+
+https://www.geeksforgeeks.org/namespaces-and-scope-in-python/
 
 
 #### Environment Diagrams:
