@@ -1,5 +1,5 @@
 class Hooman():
-    onions_eaten = 0
+    onions_eaten = 45
     birbs_seen = 0
 
     def __init__(self, n, d):
@@ -9,7 +9,7 @@ class Hooman():
 
     def eat(self, hp):
         self.health += hp
-        self.onions_eaten += 1
+        Hooman.onions_eaten += 1
 
     def yeet(self):
         Hooman.birbs_seen += 1

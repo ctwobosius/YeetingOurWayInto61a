@@ -19,6 +19,7 @@ CLASSES: blueprints for objects, create "INSTANCES" of objects
         SunTzu = Student("Sunny Boi", "Randomly spouts a lotta quotes")
 
 """
+name = "joe"
 
 class Hooman():
     # class variables/attributes
@@ -34,21 +35,20 @@ class Hooman():
         self.health = 5
 
     def eat(self, hp):
-        
         # which one?
         # health += hp
         # self.health += hp
 
         # which one?
-        # onions_eaten += hp
-        # self.onions_eaten += 1
+        # onions_eaten += 1
+        # Hooman.onions_eaten += 1
 
         # What's the difference?
-        # Hooman.onions_eaten += 1
+
 
     def yeet(self):
         # birbs_seen += 1
-        Hooman.birbs_seen += 1
+        # Hooman.birbs_seen += 1
 
     def repeat(self):
         return "Somehow, we skipped waking up and sleeping"
@@ -58,6 +58,9 @@ class Hooman():
 Also student highlights below :))) They're based on real people in the cohort!
 You know who you are ;)
 """
+
+h0 = Hooman("Bob", "Generically named person")
+# Hooman.__init__(h0, "Bob", "Generically named person")
 
 hidden = Hooman(
     "Nottel Lin Yu",
@@ -85,6 +88,10 @@ h1 = hidden
 h2 = ohHeccYe
 h3 = yuNoKnow
 
+# h1.onions_eaten = 43
+# h1.name = "billby bob joe"
+# Hooman.onions_eaten = 434
+
 # class vs instance variables
 print("ohHeccYe.name",          h2.name)
 print("ohHeccYe.descrip",       h2.descrip,         "\n")
@@ -95,7 +102,8 @@ print("hidden.health",          h1.health,          "\n")
 print("yuNoKnow.onions_eaten",  h3.onions_eaten)
 print("yuNoKnow.health",        h3.health,          "\n")
 
-hidden.eat(5)
+h1.eat(5)
+h1.eat()
 
 print("hidden.onions_eaten",    h1.onions_eaten)
 print("hidden.health",          h1.health,          "\n")
@@ -115,7 +123,7 @@ print("yuNoKnow.birbs_seen",    yuNoKnow.birbs_seen, "\n")
 class DoggoOwner(Hooman):
     birbs_seen = 100
 
-    def repeat(self):
+    def repeat(self): # methods "class functions"
         return "Pet the doggo :3"
 
     def yeet(self):
@@ -123,7 +131,8 @@ class DoggoOwner(Hooman):
         DoggoOwner.birbs_seen += 9
         print(DoggoOwner.birbs_seen)
 
-
+Hooman.yeet(sam)
+sam.yeet()
 sam = DoggoOwner("Sam", "I am, with green eggs and ham!")
 print("sam.onions_eaten",       sam.onions_eaten, "\n")
 
