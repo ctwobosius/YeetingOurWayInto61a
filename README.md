@@ -41,11 +41,20 @@ Python tutor has a way to automatically generate environment diagrams, and you c
 http://albertwu.org/cs61a/notes/environments.html
 
 
-#### Lists:
+#### Lists, Dictionaries:
 
 https://www.tutorialspoint.com/python/python_lists.htm
 
 https://www.w3schools.com/python/python_for_loops.asp (Loops for lists)
+
+https://www.w3schools.com/python/python_dictionaries.asp
+
+
+#### Object Oriented Programming:
+
+https://realpython.com/python3-object-oriented-programming/
+
+https://beautyjoy.github.io/bjc-r/topic/topic.html?topic=berkeley_bjc/python/besides-blocks-oop.topic&course=cs10_su18.html&novideo&noreading&noassignment
 
 
 #### Lambdas, HOFs:
