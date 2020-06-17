@@ -11,6 +11,7 @@ Below is the skeleton code (replace ___ with your code):
 hot = input("Is it hot? Yes or No: ")
 summer = input("Is it summer? Yes or No: ")
 
+
 if ________:
     print(_________)
 
@@ -20,6 +21,8 @@ Use a for loop to print all even numbers from 0 to x where x is an inputted numb
 Note there are multiple ways to do this problem and you don't have to use all the lines.
 """
 x = input("Give me a number: ")
+
+
 for i in range(_______):
     _________________
     _________________
@@ -30,7 +33,9 @@ Use a while loop to print all even numbers from 0 to x where x is an inputted nu
 
 Note there are multiple ways to do this problem and you don't have to use all the lines.
 """
+
 x = input("Give me a number: ")
+_________
 while (_______):
     _________________
     _________________
