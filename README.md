@@ -1,5 +1,5 @@
 # YeetingOurWayInto61a
-Edlyft prework resources, enjoy! :)
+Edlyft prework resources made by Calvin Wong and Lucy Wan, compiled by Calvin Wong, enjoy! :)
 
 ### Recordings:
 
@@ -32,17 +32,31 @@ https://thepythonguru.com/python-control-statements/
 
 https://www.w3schools.com/python/python_functions.asp
 
+https://www.geeksforgeeks.org/namespaces-and-scope-in-python/
+
 
 #### Environment Diagrams:
 
 http://pythontutor.com/visualize.html#mode=edit
+Python tutor has a way to automatically generate environment diagrams, and you can actually step through them line by line. Just paste your code then hit "visualize execution" and you can press "next" and "previous" to run through each line of code, one line at a time!
+
+http://albertwu.org/cs61a/notes/environments.html
 
 
-#### Lists:
+#### Lists, Dictionaries:
 
 https://www.tutorialspoint.com/python/python_lists.htm
 
 https://www.w3schools.com/python/python_for_loops.asp (Loops for lists)
+
+https://www.w3schools.com/python/python_dictionaries.asp
+
+
+#### Object Oriented Programming:
+
+https://realpython.com/python3-object-oriented-programming/
+
+https://beautyjoy.github.io/bjc-r/topic/topic.html?topic=berkeley_bjc/python/besides-blocks-oop.topic&course=cs10_su18.html&novideo&noreading&noassignment
 
 
 #### Lambdas, HOFs:
