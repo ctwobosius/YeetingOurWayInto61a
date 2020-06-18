@@ -37,18 +37,18 @@ class Hooman():
     def eat(self, hp):
         # which one?
         # health += hp
-        # self.health += hp
+        self.health += hp
 
         # which one?
         # onions_eaten += 1
-        # Hooman.onions_eaten += 1
+        Hooman.onions_eaten += 1
 
         # What's the difference?
 
 
     def yeet(self):
         # birbs_seen += 1
-        # Hooman.birbs_seen += 1
+        Hooman.birbs_seen += 1
 
     def repeat(self):
         return "Somehow, we skipped waking up and sleeping"
@@ -103,7 +103,7 @@ print("yuNoKnow.onions_eaten",  h3.onions_eaten)
 print("yuNoKnow.health",        h3.health,          "\n")
 
 h1.eat(5)
-h1.eat()
+# h1.eat()
 
 print("hidden.onions_eaten",    h1.onions_eaten)
 print("hidden.health",          h1.health,          "\n")
@@ -131,8 +131,7 @@ class DoggoOwner(Hooman):
         DoggoOwner.birbs_seen += 9
         print(DoggoOwner.birbs_seen)
 
-Hooman.yeet(sam)
-sam.yeet()
+
 sam = DoggoOwner("Sam", "I am, with green eggs and ham!")
 print("sam.onions_eaten",       sam.onions_eaten, "\n")
 
@@ -144,3 +143,8 @@ print(sam.yeet())
 print(sam.repeat())
 print("sam.birbs_seen",         sam.birbs_seen)
 print("hidden.birbs_seen",      h1.birbs_seen)
+
+
+print()
+print(Hooman.yeet(sam))
+sam.yeet()
