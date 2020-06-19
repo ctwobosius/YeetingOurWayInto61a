@@ -144,7 +144,6 @@ print(sam.repeat())
 print("sam.birbs_seen",         sam.birbs_seen)
 print("hidden.birbs_seen",      h1.birbs_seen)
 
-
 print()
 print(Hooman.yeet(sam))
 sam.yeet()
