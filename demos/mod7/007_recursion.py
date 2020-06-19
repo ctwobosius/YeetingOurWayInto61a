@@ -4,9 +4,10 @@ def dream_within_a(dream):
     print(dream)
     return dream_within_a(dream)
 
+
 # def sum_from_zero_to(n):
 #     if ____ <= 0:
-#         return ____
+#         return 0
 #     else:
 #         return ____
 
@@ -19,18 +20,21 @@ def dream_within_a(dream):
 Could use for loop; but there is another.
 """
 def factorial(n):
-    if n <= 0:
-        return 1
-    return factorial(n - 1) * n
+    if n <= ____:
+        return ____
+    return factorial(____) * ____
+
+
+
 
 
 def factorial_iter(n):
-    if n <= 0:           # to deal with negative n
-        return
+    if n <= ____:           # to deal with negative n
+        return 1
     product = n             # start product at n
-    for i in range(1, n):   # for each number from 1 all the way to n-1,
+    for i in range(____, ____):   # for each number from 1 all the way to n-1,
         product *= i        # multiply it with our product
-    return product
+    return ____
 
 print(factorial(5))
 print(factorial_iter(5))
