@@ -1,4 +1,6 @@
-""" Object Oriented Programming, or as CS peeps like to say, OOP """
+""" Object Oriented Programming, or as CS peeps like to say, OOP
+By Calvin Wong
+"""
 
 """
 EVERYTHING in Python is an Object! But what is an object?

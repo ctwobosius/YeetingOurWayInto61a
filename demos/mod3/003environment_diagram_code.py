@@ -1,4 +1,6 @@
-""" Environment Diagram Code """
+""" Environment Diagram Code
+By Calvin Wong
+"""
 
 """
 Primitives:

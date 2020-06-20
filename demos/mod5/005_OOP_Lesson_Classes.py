@@ -1,3 +1,5 @@
+"""By Calvin Wong"""
+
 class Hooman():
     onions_eaten = 45
     birbs_seen = 0

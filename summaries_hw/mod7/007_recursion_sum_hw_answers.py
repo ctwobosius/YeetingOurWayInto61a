@@ -1,4 +1,6 @@
-""" Recursively doing Recursion...hm...Version: homework"""
+""" Recursively doing Recursion...hm...Version: homework
+By Calvin Wong
+"""
 
 import random
 

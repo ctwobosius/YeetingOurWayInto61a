@@ -1,4 +1,5 @@
 # <- This is a comment. Python ignores anything on this commented line!
+# By Calvin Wong
 
 "A String" # basically words/sentences
 
@@ -34,7 +35,7 @@ print(4 / 2)
 print(5 // 2) # floor division (cutting off the decimal)
 print(4 // 2) # What will this be?
 
-# print(1 / 0) 
+# print(1 / 0)
 # division by 0? Is this possible?
 
 print(1 % 3) # modulus, gives the remainder of 1 / 3
@@ -49,7 +50,7 @@ print("Join" + " dis" + " together~") # string concatenation
 print(str(234)) # Convert to string
 # What will this look like?
 
-#print("String " + 18) 
+#print("String " + 18)
 # What will this do?
 
 print("The prime number " + str(13 + 4))

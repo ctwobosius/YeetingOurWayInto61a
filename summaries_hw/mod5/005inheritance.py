@@ -1,4 +1,5 @@
 """ OOP part 2! Inheritance (No, it's not a large sum of money)
+By Calvin Wong
 --------------------------------------------------------------------------------
 There can be a heirarchy of classes! If class 2 inherits from class 1, then
 class 2 has all of class 1's properties (methods, attributes, etc.)

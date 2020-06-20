@@ -1,4 +1,6 @@
-""" OOP! Not oops, OOP, Object Oriented Programming! """
+""" OOP! Not oops, OOP, Object Oriented Programming!
+By Calvin Wong
+"""
 
 # Sidenote: what if we want to say a quote?
 "George Washington once famously said, \"Yo bro I think my teeth be falling out or something\""

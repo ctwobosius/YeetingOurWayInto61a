@@ -1,4 +1,6 @@
-""" Recursively doing Recursion...hm...Version: homework"""
+""" Recursively doing Recursion...hm...Version: homework
+By Calvin Wong
+"""
 
 import random   # this basically imports code that someone else
                 # (in this case the Python creators) wrote, so you can use it in yours

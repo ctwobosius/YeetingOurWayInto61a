@@ -1,4 +1,6 @@
-""" Fun-ctions! Pun-ctions? Punctuation??? Syntax ;) Answers"""
+""" Fun-ctions! Pun-ctions? Punctuation??? Syntax ;) Answers
+By Calvin Wong
+"""
 
 print(f(3)) # What would this do? ____
 # Would print out:

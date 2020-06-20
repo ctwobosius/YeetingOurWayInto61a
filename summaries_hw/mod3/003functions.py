@@ -1,4 +1,6 @@
-""" Fun-ctions! Pun-ctions? Punctuation??? Syntax ;)"""
+""" Fun-ctions! Pun-ctions? Punctuation??? Syntax ;)
+By Calvin Wong
+"""
 
 
 print() # is a function!
