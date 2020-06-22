@@ -52,5 +52,9 @@ mp4 = lambda asdf: asdf
 rar = lambda movie: mp4(rar)
 rar(2)(2)
 w([1, 2, 3, 1, 8, 2])
+
 f = lambda x: lambda y: lambda z: x+y+z
 reduc(lambda g, x: g(x),[2, 4, 6], f)
+
+# ED:
+x = f(4)(3)
