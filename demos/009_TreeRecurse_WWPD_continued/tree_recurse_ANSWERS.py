@@ -1,26 +1,7 @@
-""" Tree Recursion: Recursion, except there's trees?
-By Calvin
-"""
-def f(n):
-    if n < 3:
-        return 3
-    return f(n-1)
-
-# 0 = 1
-# 1 = 1
-# 2 = 1 + 1 = 2
-# 3 = 2 + 1 = 3 = f(3) + f(2)
-# 4 = 3 + 2 = 5
-# f(5) = 5 + 3 = f(4) + f(3)
-# f(500) = f(499) + f(498)
-# f(501) = f(500) + f(499)
-
 def fib(n):
     if n <= 1:
         return 1
     return fib(n - 1) + fib(n - 2)
-    # memoization
-
 
 class Node():
 
@@ -41,21 +22,21 @@ t1.left = t3
 t1.right = t9
 t3.left = t5
 
-# def find(n, topNode):
-#     if ____:
-#         return ____
-#     elif ____:
-#         return True
-#     elif ____:
-#         return ____
-#     else:
-#         return find(____, ____) ____ find(____, ____)
+def find(n, topNode):
+    if not topNode:
+        return False
+    elif topNode.val == n:
+        return True
+    elif topNode.empty():
+        return False
+    else:
+        return find(n, topNode.left) or find(n, topNode.right)
 
-# find(3, t1)
-# find(4, t1)
-# find(5, t1)
+find(3, t1)
+find(4, t1)
+find(5, t1)
 
-# WWPD
+
 
 def w(L):
     if len(L) == 0:
@@ -76,9 +57,7 @@ range(1, 50)[-1]
 (6 and 7) or (4 or 3) + (0 and 2)
 mp4 = lambda asdf: asdf
 rar = lambda movie: mp4(rar)
-# def rar(movie):
-#     return mp4(rar)
-rar(2)(2) = function rar
+rar(2)(2)
 w([1, 2, 3, 1, 8, 2])
 
 f = lambda x: lambda y: lambda z: x+y+z
