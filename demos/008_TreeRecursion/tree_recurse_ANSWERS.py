@@ -1,11 +1,7 @@
-""" Tree Recursion: Recursion, except there's trees?
-By Calvin
-"""
-
 def fib(n):
     if n <= 1:
-        return ____
-    return fib(____) + fib(____)
+        return 1
+    return fib(n - 1) + fib(n - 2)
 
 class Node():
 
@@ -27,20 +23,20 @@ t1.right = t9
 t3.left = t5
 
 def find(n, topNode):
-    if ____:
-        return ____
-    elif ____:
+    if not topNode:
+        return False
+    elif topNode.val == n:
         return True
-    elif ____:
-        return ____
+    elif topNode.empty():
+        return False
     else:
-        return find(____, ____) ____ find(____, ____)
+        return find(n, topNode.left) or find(n, topNode.right)
 
 find(3, t1)
 find(4, t1)
 find(5, t1)
 
-# WWPD
+
 
 def w(L):
     if len(L) == 0:
