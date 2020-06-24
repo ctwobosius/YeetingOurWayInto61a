@@ -46,8 +46,6 @@ t3.left = t5
 #         return ____
 #     elif ____:
 #         return True
-#     elif ____:
-#         return ____
 #     else:
 #         return find(____, ____) ____ find(____, ____)
 

@@ -27,8 +27,6 @@ def find(n, topNode):
         return False
     elif topNode.val == n:
         return True
-    elif topNode.empty():
-        return False
     else:
         return find(n, topNode.left) or find(n, topNode.right)
 
