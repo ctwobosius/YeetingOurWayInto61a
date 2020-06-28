@@ -29,9 +29,9 @@ class Node():
         self.right = right
         self.val = val
 
-    def empty(self):
+    def no_children(self):
         return not self.left and not self.right
-
+        # return self.left == None and self.right == None
 
 t1 = Node(1)
 t3 = Node(3)
@@ -40,18 +40,18 @@ t9 = Node(9)
 t1.left = t3
 t1.right = t9
 t3.left = t5
+# t1.no_children()
 
-# def find(n, topNode):
-#     if ____:
-#         return ____
-#     elif ____:
-#         return True
-#     elif ____:
-#         return ____
-#     else:
-#         return find(____, ____) ____ find(____, ____)
+def find(n, topNode):
+    if topNode == None:
+        return False
+    elif n == topNode.val:
+        return True
+    else:
+        return find(n, topNode.left) or find(n, topNode.right)
 
 # find(3, t1)
+# true
 # find(4, t1)
 # find(5, t1)
 

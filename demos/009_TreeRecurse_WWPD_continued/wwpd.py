@@ -1,7 +1,6 @@
 def get(grip):
     get = lambda: grip - 10
     while grip - get() > -10:
-
         grip = get() - 10
         print(grip)
         if grip < -100:
