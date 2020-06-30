@@ -9,26 +9,34 @@ In the same way, using
 local x
 allows you to modify the parent frame's local variables
 """
-
+x = 42
 def harhar():
 	fib = 0
 	the = "Yeeted"
 
 	def new_thing():
-		nonlocal the
+		# nonlocal the
 		fib = 1
-		the = "Yote"
+		# the = "Yote"
+		# x = the + " Yee"
+		def f():
+			nonlocal the
+			the = "yeet"
+			return the
+		return f()
 
-	new_thing()
+	print(new_thing())
+	# x = the + " outta here"
 	return the, fib
 
 print(harhar())
 
+y = 1
 def setup():
 	global a, y
 	a = [3, 4, 5]
 	y = a
-	print()
+	print(y)
 
 setup()
 a = a + [2]
