@@ -1,5 +1,5 @@
 # YeetingOurWayInto61a
-Edlyft prework resources made by Calvin Wong and Lucy Wan, compiled by Calvin Wong, enjoy! :)
+Edlyft lesson resources made by Calvin Wong and Lucy Wan, compiled by Calvin Wong, enjoy! :)
 
 ### Recordings:
 
