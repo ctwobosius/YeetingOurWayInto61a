@@ -1,7 +1,6 @@
 """ Abstraction (Abstract Art? Maybe...???) """
 
 from no_looky import *
-
 """
 Abstraction is basically hiding details! This helps you write cleaner code
 and avoid copy pasting the same code over and over.
@@ -32,10 +31,10 @@ rational_to_float(r):
 
 """
 
+
 x = rational(3, 2)
 rational_to_float(x)
 numer(x)
-
 
 x = (3, 2)
 x[0] / x[1]
@@ -46,14 +45,28 @@ rational_to_float(x)
 numer(x)
 
 x = {"n": 3, "d": 2}
-x[0] / x[1]
-x[0]
+# x[0] / x[1] == 1.5
+x["n"] / x["d"]
+x["n"]
+
+x = {"n": 3, "d": 2}
+# x[0] / x[1] == 1.5
+x["n"] / x["d"]
+x["n"]
+x = {"n": 3, "d": 2}
+# x[0] / x[1] == 1.5
+x["n"] / x["d"]
+x["n"]
+x = {"n": 3, "d": 2}
+# x[0] / x[1] == 1.5
+x["n"] / x["d"]
+x["n"]
 
 """
 no_looky also has:
 
 extendedEuclid(x, y):
-    Returns d, a, b such that d is the gcd of X and Y and d = aX + bY.
+    Returns (d, a, b) such that d is the gcd of X and Y and d = aX + bY.
     X and Y must be integers.
 
     >>> extendedEuclid(3, 4)
@@ -67,7 +80,7 @@ extendedEuclid(x, y):
 
 def gcd(x, y):
     """Returns the greatest common denominator of X and Y, given both are integers."""
-    return ____
+    return extendedEuclid(x, y)[0]
 
 
 

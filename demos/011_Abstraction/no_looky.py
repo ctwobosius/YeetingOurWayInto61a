@@ -24,21 +24,21 @@ def extendedEuclid(x, y):
         return (y, eqs[y][1], eqs[y][0])
     return (y, eqs[y][0], eqs[y][1])
 
-def rational(num, den):
-    # Returns the representation of a rational number
-    return num, den
-
 # def rational(num, den):
-#     return {"n": num, "d": den}
+#     # Returns the representation of a rational number
+#     return num, den
+
+def rational(num, den):
+    return {"n": num, "d": den}
 
 def numer(r):
     # Returns the numerator of R, a rational number
-    return r[0]
-    # return r["n"]
+    # return r[0]
+    return r["n"]
 
 def denom(r): # Returns the denominator of R, a rational number
-    return r[1]
-    # return r["d"]
+    # return r[1]
+    return r["d"]
 
 def rational_to_float(r): # Returns the float of R, a rational number
     return numer(r) / denom(r)
