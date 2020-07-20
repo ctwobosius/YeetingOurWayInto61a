@@ -80,7 +80,6 @@ def gen(lst):
     i = ____
     while ____:
         if _____:
-
             yield lst[i] # lst[0]
             _____
         else:
