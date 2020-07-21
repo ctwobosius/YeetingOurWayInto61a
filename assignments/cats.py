@@ -16,6 +16,8 @@ Q5 autocorrect
         user_word:      String
         valid_words:    List
         diff_function:  Function
+            takes in user_word, a word from valid word, then a limit
+            returns the difference between user_word and the other word you passed in
         limit:          Number
 
     output:
@@ -66,19 +68,52 @@ Q7: meowstake_matches
 
 Phase 3:
 Q8: report_progress
-    typed:              String
-    prompt:             String
-    id:                 ?
-    send:               Function
+    input:
+        typed:              String
+        prompt:             String
+        id:                 Anything
+        send:               Function
+            takes in a dictionary of {"id": some_id, "progress": player_progress (described below)}
+
+    output:
+        Number:
+            The player's progress (number of correct words / total number of words in prompt)
 
 Q9: time_per_word
     input:
         times_per_player:   List of Lists
+            [player0, player1,...]
+            where playerN is a list of direct timestamps for each player;
+                eg: [1, 2, 3]
+                # could be 1pm, 2pm, 3pm, but we don't really care about units
+            we want this to be converted into how long each word took to type
+                eg: the above would be [1, 1, 1]
         words:              List
+
+    output:
+        Game Object
+            uses the given input to create a game object, see def game(words, times): below PROBLEM 10
 
 Q10: fastest_words
     input:
+        game:               Game object
+
+    intermediates:
+        word_at:             Function
+            takes in game and word_index (Number)
+            returns the word (String) corresponding to that index
+
+        all_times:           Function
+            try reading for yourself what these do!
+
+        all_words:           Function
+
+        time:                Function
 
 
-
+    output:
+        List of Lists:
+            [player0, player1,...]
+            playerN is a list of all the words player N typed the fastest
+                eg: ["doofus", "big", "cheeseburger"] # playerN typed these the fastest
 """
