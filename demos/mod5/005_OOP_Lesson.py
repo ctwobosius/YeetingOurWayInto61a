@@ -63,6 +63,7 @@ You know who you are ;)
 
 h0 = Hooman("Bob", "Generically named person")
 # Hooman.__init__(h0, "Bob", "Generically named person")
+h0.repeat()
 
 hidden = Hooman(
     "Nottel Lin Yu",

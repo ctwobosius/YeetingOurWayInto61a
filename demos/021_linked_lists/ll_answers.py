@@ -12,6 +12,7 @@ str(x)
 # "Division Error?"
 
 
+
 def nonMutativeLink(l, func):
     if l is Link.empty:
         return Link.empty
