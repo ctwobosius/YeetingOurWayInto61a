@@ -74,6 +74,7 @@ Q8: report_progress
         id:                 Anything
         send:               Function
             takes in a dictionary of {"id": some_id, "progress": player_progress (described below)}
+            then sends it to the server
 
     output:
         Number:
@@ -92,7 +93,8 @@ Q9: time_per_word
 
     output:
         Game Object
-            uses the given input to create a game object, see def game(words, times): below PROBLEM 10
+            uses the given input to create a game object
+            see def game(words, times): which is below the problem 10 code
 
 Q10: fastest_words
     input:
@@ -104,7 +106,8 @@ Q10: fastest_words
             returns the word (String) corresponding to that index
 
         all_times:           Function
-            try reading for yourself what these do!
+            Try reading for yourself what these do, practice with abstraction/reading descriptions
+            These functions will be useful in turning your above input into the output below
 
         all_words:           Function
 
