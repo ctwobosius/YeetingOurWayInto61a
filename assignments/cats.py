@@ -101,13 +101,15 @@ Q10: fastest_words
         game:               Game object
 
     intermediates:
+        These functions will be useful in turning your above input into the output below, some
+        solutions use all of them, some solutions only use some of these functions
+
         word_at:             Function
             takes in game and word_index (Number)
             returns the word (String) corresponding to that index
 
         all_times:           Function
             Try reading for yourself what these do, practice with abstraction/reading descriptions
-            These functions will be useful in turning your above input into the output below
 
         all_words:           Function
 
