@@ -121,4 +121,18 @@ Q10: fastest_words
             [player0, player1,...]
             playerN is a list of all the words player N typed the fastest
                 eg: ["doofus", "big", "cheeseburger"] # playerN typed these the fastest
+
+
+EC1:
+        Use KEYDISTANCES to return a value based on how different the corrected word is from the original, in terms of how many keys apart they are
+
+EC2:
+        Memoization
+        Dictionaries
+
+        Recursive calls are expensive! Take fib(n) for example:
+            This calls fib(n-1) and fib(n-2), and fib(n-1) calls fib(n-2) AGAAIN!!! Can we make this better?
+            That is the question ... ;)
+
+
 """
