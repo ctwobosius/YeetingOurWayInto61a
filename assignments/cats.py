@@ -85,10 +85,17 @@ Q9: time_per_word
         times_per_player:   List of Lists
             [player0, player1,...]
             where playerN is a list of direct timestamps for each player;
-                eg: [1, 2, 3]
+                eg: [1, 2, 4]
+                [[1, 2, 3]]
+
+
+                [[1, 5, 6], [2, 4, 5]]
+                player0 completed word 1 at 1pm, completed word 2 at 5pm, completed word 3 at 6pm
                 # could be 1pm, 2pm, 3pm, but we don't really care about units
-            we want this to be converted into how long each word took to type
-                eg: the above would be [1, 1, 1]
+            we want this to be converted into how long each word took to type starting at 0pm
+                eg: the above would be [1, 1, 2]
+
+                [[1, 4, 1] ]
         words:              List
 
     output:
