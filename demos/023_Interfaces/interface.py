@@ -62,3 +62,11 @@ class Zombie(Villain):
 #
 # z1 = Zombie("zomb1", "slow movement, lack of brain")
 # z1.laugh()
+
+
+
+
+"""
+https://cs61a.org/exam/fa19/mt2/61a-fa19-mt2.pdf#page=8
+https://cs61a.org/exam/fa19/final/61a-fa19-final.pdf#page=5
+"""
