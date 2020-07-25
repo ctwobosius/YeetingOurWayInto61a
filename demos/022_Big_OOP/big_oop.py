@@ -22,9 +22,37 @@ class Classname:
         return self.attribute
 
     def set_attribute(self, val):
-        self.attribute = val
+        self.attribute = val + "color"
+
+
+mice1.color = "red"
+mice1.set_color("red")
+mice.color
+mice2.color = "red"
+
+
+
 
 instance1 = Classname(args) # make an instance of Classname named instance1
+# Classname.__init__(instance1, args)
+bob = Student("bob", "afro")
+
+class Mouse():
+    has_wire = "yes"
+
+    def __init__(self, diggitydoo):
+        self.color = diggitydoo
+        # mice1.color = "red"
+        # mice1.color
+
+mice1 = Mouse("red")
+Mouse.__init__(mice1, "red")
+
+instance1.method()
+num_hotdogs_eaten = bob.eat(args)
+
+Student.eat(bob, args)
+
 instance1.attribute         # if it can't find attribute in instance1, looks in Classname's class_attributes
 Classname.class_attribute
 instance1.method(args)      # instance1 is automatically passed in as self using the dot notation
@@ -47,15 +75,20 @@ class Link:
     >>> s.first = 5
     >>> s.rest.first = 6
     >>> s.rest.rest = Link.empty
-    >>> s                                    # Displays the contents of repr(s)
+    >>> s
     Link(5, Link(6))
     >>> s.rest = Link(7, Link(Link(8, Link(9))))
     >>> s
     Link(5, Link(7, Link(Link(8, Link(9)))))
-    >>> print(s)                             # Prints str(s)
+    >>> print(s)
+    >>>  "<5 7 <8 9>>"
     <5 7 <8 9>>
+        print str -> __str__
+        instance -> __repr__
+
+        empty = ()
     """
-    empty = ()
+
 
     def __init__(self, first, rest=empty):
         assert rest is Link.empty or isinstance(rest, Link)
@@ -124,6 +157,9 @@ class Tree:
         >>> 8 in t1
         False
         >>> t2 = Tree(3, [Tree(2, [Tree(5)]), Tree(4)])
+        >>> t2
+        Tree(3, [Tree(2, [Tree(5)]), Tree(4)])
+        print(t2)
         >>> 6 in t2
         False
         >>> 5 in t2
@@ -150,3 +186,21 @@ class Tree:
                 tree_str += print_tree(b, indent + 1)
             return tree_str
         return print_tree(self).rstrip()
+
+
+
+def f():
+
+    sum = 33
+    if b == true:
+        sum(3)
+        return 4
+    elif b == false:
+        return 3
+    else:
+        return 32
+
+
+if b:
+    return 4
+return 3
