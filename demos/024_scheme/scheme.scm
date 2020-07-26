@@ -14,7 +14,7 @@
 #f
 
 ; Evaluation
-;(operator operand1 operand2...)
+;(operator operand1 operand2 ...)
 (+ 3 3)
 ; after evaluating operator, then operands, apply operator to operands
 
@@ -27,6 +27,18 @@
         ((< x 0) 'negative)
         (else 'zero))       ; optional else
 
-; Defining variables and functions
+; Defining variables, functions, lambdas
 (define <name> <expression>)
 (define (<name> <param1> <param2> ...) <body>)
+(lambda (<param1> <param2> ...) <body>)
+
+; Lists (Linked)
+(cons first rest) ; create a single link
+(cons 1 (cons 2 (cons 3 nil)))
+; (1 2 3)
+(car linkedList) ; first
+(cdr linkedList) ; rest
+
+(list item0 item1 ...)
+; creates a linked list
+; (list 1 2 3) is the same as (cons 1 (cons 2 (cons 3 nil)))
