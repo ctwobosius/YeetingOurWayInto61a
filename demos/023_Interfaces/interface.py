@@ -12,6 +12,11 @@ class Villain():
         """Prints out the villain's attack message"""
         assert False, "Haven't defined attack() yet"
 
+    def add(self, x, y)
+        su = x + y + 1
+        assert su == x + y, "Error message"
+        return su
+
     def laugh(self):
         """Prints out the villain's signature laugh"""
         assert False, "Haven't defined laugh() yet"
@@ -27,8 +32,18 @@ class Villain():
         (Sets the attribute dead to be DED)"""
         self.dead = ded
 
+    def warble(self, str):
+        print("warble")
+        print(str)
+
 
 class DarthVader(Villain):
+    def warble(self, str):
+        # NOT Villain.warble()
+        # self.warble() as if the self is from the Villain class
+        super().warble(str)
+        print("hooo paahhh")
+
     def attack(self):
         print("Tschhh Hum Bzzzt")
 
@@ -53,20 +68,15 @@ class Zombie(Villain):
         print("There is no nuke here")
 
 
-# bob = Villain("bob", "name without caps")
-# bob.laugh()
-#
-# dv = DarthVader("Darth Vader", "Big scary force powers")
-# dv.laugh()
-# dv.forcePush()
-#
-# z1 = Zombie("zomb1", "slow movement, lack of brain")
-# z1.laugh()
 
+interfaces: class for the class
+super:
+inheritance:
 
 
 
 """
 https://cs61a.org/exam/fa19/mt2/61a-fa19-mt2.pdf#page=8
 https://cs61a.org/exam/fa19/final/61a-fa19-final.pdf#page=5
+
 """
