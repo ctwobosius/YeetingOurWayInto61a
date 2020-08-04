@@ -1,3 +1,5 @@
+;(1 . #[promise (not forced)])
+
 (define inf_num
   (cons-stream 1 inf_num)
 )
